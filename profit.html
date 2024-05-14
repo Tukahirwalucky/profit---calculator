@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profit Calculator</title>
+    <link rel="stylesheet" href="profit.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay" id="loginOverlay">
+        <div class="login-container" id="loginContainer">
+          <div class="makeCentre">
+            <img src="images/PC LOGO.jpg" alt="Logo" class="logo" />
+            <h2>Log In to Your Account</h2>
+          </div>
+          <div id="loginForm">
+            <input type="text" id="username" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password" />
+            <button onclick="login()">Log In</button>
+            <div style="text-align: center; margin-top: 10px">Or</div>
+            <button onclick="loginWithGoogle()">Log In with Google</button>
+            <button onclick="loginWithFacebook()">Log In with Facebook</button>
+          </div>
+        </div>
+      </div>
+      <div class="overlay" id="calculatorOverlay" style="display: none">
+        <div class="calculator-container" id="calculator">
+          <div class="calculator-content">
+            <img src="images/PC LOGO.jpg" alt="Logo" class="logo-2" />
+
+            <h2>Profit Calculator</h2>
+            <div id="days"></div>
+            <button class="btn-add-day" id="addDayBtn" onclick="addDay()">
+              Add Day
+            </button>
+            <button class="btn-save" onclick="saveData()">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="profit.js"></script>
+  </body>
+</html>

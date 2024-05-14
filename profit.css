@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/money\ 3.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(129, 2, 2, 0.8); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container,
+.calculator-container {
+  /* max-width: 400px; */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+  background-color: #ffffff;
+}
+
+.calculator-container {
+  /* background-color: transparent; */
+  background-color: #ffffff;
+}
+
+.calculator-content {
+  background-color: transparent;
+  /* padding: 20px; */
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+table {
+  width: 100%; /* Adjusted to 100% */
+}
+
+th,
+td {
+  padding: 10px; /* Increased padding */
+  text-align: left;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+button {
+  width: calc(100% - 22px);
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4b2c09;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2e2305;
+}
+
+.btn-save,
+.btn-save:hover {
+  background-color: green;
+}
+.btn-delete-product,
+.btn-delete-product:hover {
+  background-color: rgb(212, 7, 7);
+}
+
+.makeCentre {
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.logo-2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
